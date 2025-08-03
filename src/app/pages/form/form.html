@@ -1,0 +1,27 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <label for="name">Name:</label><br />
+  <input id="name" type="text" formControlName="name" /><br />
+  <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched" class="error">
+    Name is required.
+  </div>
+
+  <label for="email">Email:</label><br />
+  <input id="email" type="email" formControlName="email" /><br />
+  <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="error">
+    <div *ngIf="form.get('email')?.errors?.['required']">Email is required.</div>
+    <div *ngIf="form.get('email')?.errors?.['email']">Invalid email format.</div>
+  </div>
+
+  <label for="message">Message:</label><br />
+  <textarea id="message" formControlName="message"></textarea><br />
+  <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched" class="error">
+    Message is required.
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="submitted" class="thank-you">
+  <h2>Thank you for your submission!</h2>
+  <pre>{{ formData | json }}</pre>
+</div>

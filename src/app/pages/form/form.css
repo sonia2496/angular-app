@@ -1,0 +1,90 @@
+form {
+  max-width: 450px;
+  margin: 20px auto 40px;
+  padding: 25px 30px;
+  background: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px #a6c8ff;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.85em;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.05em;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgb(0 123 255 / 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, button:focus {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgb(0 86 179 / 0.6);
+  outline: none;
+}
+
+.thank-you {
+  max-width: 450px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  border: 1.5px solid #28a745;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgb(40 167 69 / 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  font-size: 0.95em;
+}
+
+
+@media (max-width: 500px) {
+  form, .thank-you {
+    margin: 15px 10px;
+    padding: 20px 15px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px 16px;
+  }
+}

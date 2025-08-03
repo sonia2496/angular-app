@@ -1,0 +1,10 @@
+    
+<div *ngIf="loading" class="loading">Loading data...</div>
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<ul class="data-list" *ngIf="!loading && !error">
+  <li *ngFor="let item of data">
+    <h3>{{ item.title || item.name || item.login }}</h3>
+    <p *ngIf="item.body">{{ item.body }}</p>
+  </li>
+</ul>

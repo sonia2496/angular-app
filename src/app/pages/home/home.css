@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 80vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #2c3e50;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+  color: #1a2a6c;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 10px 0;
+  color: #34495e;
+  font-weight: 500;
+}
+
+p:last-child {
+  font-style: italic;
+  color: #5d6d7e;
+  font-weight: 400;
+}
